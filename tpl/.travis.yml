@@ -1,0 +1,14 @@
+sudo: false
+language: python
+python:
+  - 3.5
+env:
+  matrix:
+  {% for ENV in TOX_ENVS %}
+    - TOXENV={{ ENV }}
+  {% endfor %}
+
+install: "pip install -U devpi"
+script:
+  - devpi use {{ DEVPI_INDEX }}
+  - devpi test {{ PACKAGE }}=={{ VERSION }}

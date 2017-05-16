@@ -7,6 +7,29 @@ install:
   - pypy --version
   - C:\Python36\python -m pip install devpi
 build: false  # Not a C# project, build stuff at the test step instead.
+environment:
+  matrix:
+  # note: please use "tox --listenvs" to populate the build matrix below
+  - TOXENV: "linting"
+  - TOXENV: "py26"
+  - TOXENV: "py27"
+  - TOXENV: "py33"
+  - TOXENV: "py34"
+  - TOXENV: "py35"
+  - TOXENV: "py36"
+  - TOXENV: "pypy"
+  - TOXENV: "py27-pexpect"
+  - TOXENV: "py27-xdist"
+  - TOXENV: "py27-trial"
+  - TOXENV: "py35-pexpect"
+  - TOXENV: "py35-xdist"
+  - TOXENV: "py35-trial"
+  - TOXENV: "py27-nobyte"
+  - TOXENV: "doctesting"
+  - TOXENV: "freeze"
+  - TOXENV: "docs"
+
+
 test_script:
   - C:\Python36\python -m devpi use $DEVPI_INDEX
   - C:\Python36\python -m devpi test $PACKAGE==$VERSION

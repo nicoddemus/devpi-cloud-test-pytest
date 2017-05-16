@@ -4,11 +4,34 @@ python:
   - 3.5
 env:
   matrix:
-  
+    # note: please use "tox --listenvs" to populate the build matrix below
+    - TOXENV=linting
+    - TOXENV=py26
     - TOXENV=py27
-  
+    - TOXENV=py33
+    - TOXENV=py34
     - TOXENV=py35
-  
+    - TOXENV=pypy
+    - TOXENV=py27-pexpect
+    - TOXENV=py27-xdist
+    - TOXENV=py27-trial
+    - TOXENV=py35-pexpect
+    - TOXENV=py35-xdist
+    - TOXENV=py35-trial
+    - TOXENV=py27-nobyte
+    - TOXENV=doctesting
+    - TOXENV=freeze
+    - TOXENV=docs
+
+matrix:
+  include:
+    - env: TOXENV=py36
+      python: '3.6'
+    - env: TOXENV=py37
+      python: 'nightly'
+  allow_failures:
+    - env: TOXENV=py37
+      python: 'nightly'
 
 install: "pip install -U devpi"
 script:

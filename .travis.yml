@@ -25,5 +25,5 @@ env:
 
 install: "pip install -U devpi"
 script:
-  - devpi use {{ DEVPI_INDEX }}
-  - devpi test {{ PACKAGE }}=={{ VERSION }}
+  - devpi use https://devpi.net/nicoddemus/dev
+  - devpi test pytest==3.1.0

@@ -4,9 +4,24 @@ python:
   - 3.5
 env:
   matrix:
-  {% for ENV in TOX_ENVS %}
-    - TOXENV={{ ENV }}
-  {% endfor %}
+    # note: please use "tox --listenvs" to populate the build matrix below
+    - TOXENV=linting
+    - TOXENV=py26
+    - TOXENV=py27
+    - TOXENV=py33
+    - TOXENV=py34
+    - TOXENV=py35
+    - TOXENV=pypy
+    - TOXENV=py27-pexpect
+    - TOXENV=py27-xdist
+    - TOXENV=py27-trial
+    - TOXENV=py35-pexpect
+    - TOXENV=py35-xdist
+    - TOXENV=py35-trial
+    - TOXENV=py27-nobyte
+    - TOXENV=doctesting
+    - TOXENV=freeze
+    - TOXENV=docs
 
 install: "pip install -U devpi"
 script:

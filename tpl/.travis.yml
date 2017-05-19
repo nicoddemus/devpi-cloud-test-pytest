@@ -23,6 +23,16 @@ env:
     - TOXENV=freeze
     - TOXENV=docs
 
+matrix:
+  include:
+    - env: TOXENV=py36
+      python: '3.6'
+    - env: TOXENV=py37
+      python: 'nightly'
+  allow_failures:
+    - env: TOXENV=py37
+      python: 'nightly'
+
 install: "pip install -U devpi"
 script:
   - devpi use $DEVPI_INDEX

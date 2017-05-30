@@ -1,8 +1,8 @@
-# Results for [pytest==3.1.0](https://devpi.net/nicoddemus/dev/pytest/3.1.0)
+# Results for [pytest==-h](https://devpi.net/nicoddemus/dev/pytest/-h)
 
 Cloud tests for [pytest](FILL_IN_REPOSITORY_LINK).
 
-Test triggered at: Fri May 19 19:20:21 2017
+Test triggered at: Tue May 30 18:21:44 2017
 
 [![Build Status](FILL_ME_IN)](FILL_ME_IN)
 

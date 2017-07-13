@@ -1,8 +1,8 @@
-# Results for [pytest==3.1.3](https://devpi.net/nicoddemus/dev/pytest/3.1.3)
+# Results for [pytest==3.2.0](https://devpi.net/nicoddemus/dev/pytest/3.2.0)
 
 Cloud tests for [pytest](FILL_IN_REPOSITORY_LINK).
 
-Test triggered at: Mon Jul  3 20:31:19 2017
+Test triggered at: Thu Jul 13 19:24:59 2017
 
 [![Build status](https://travis-ci.org/nicoddemus/devpi-cloud-test-pytest.svg?branch=master)](https://travis-ci.org/nicoddemus/devpi-cloud-test-pytest)
 

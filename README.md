@@ -2,7 +2,7 @@
 
 Cloud tests for [pytest](FILL_IN_REPOSITORY_LINK).
 
-Test triggered at: Thu Jul 13 19:24:59 2017
+Test triggered at: Thu Jul 13 19:38:55 2017
 
 [![Build status](https://travis-ci.org/nicoddemus/devpi-cloud-test-pytest.svg?branch=master)](https://travis-ci.org/nicoddemus/devpi-cloud-test-pytest)
 

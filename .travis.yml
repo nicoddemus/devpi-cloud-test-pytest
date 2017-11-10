@@ -42,4 +42,4 @@ matrix:
 install: "pip install -U devpi"
 script:
   - devpi use https://devpi.net/nicoddemus/dev
-  - devpi test pytest==3.2.3
+  - devpi test pytest==pytest==3.2.4

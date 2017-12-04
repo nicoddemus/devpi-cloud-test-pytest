@@ -30,4 +30,4 @@ environment:
   - TOXENV: "docs"
 test_script:
   - C:\Python36\python -m devpi use https://devpi.net/nicoddemus/dev
-  - C:\Python36\python -m devpi test pytest==3.3.0
+  - C:\Python36\python -m devpi test pytest==3.3.1
